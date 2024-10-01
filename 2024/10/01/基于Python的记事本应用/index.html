@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>基于Python的记事本应用 |  VoltaOS</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-基于Python的记事本应用"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  基于Python的记事本应用
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/10/01/%E5%9F%BA%E4%BA%8EPython%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC%E5%BA%94%E7%94%A8/" class="article-date">
+  <time datetime="2024-10-01T09:28:45.000Z" itemprop="datePublished">2024-10-01</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">3.2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">14 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="祝贺大家国庆快乐"><a href="#祝贺大家国庆快乐" class="headerlink" title="祝贺大家国庆快乐"></a>祝贺大家国庆快乐</h1><h2 id="Python-记事本"><a href="#Python-记事本" class="headerlink" title="Python 记事本"></a>Python 记事本</h2><p>在当今数字化的时代，文本编辑工具是我们日常工作、学习和生活中不可或缺的一部分。Python 记事本作为一款功能强大、简洁易用的文本编辑软件，为用户提供了高效、便捷的文本处理体验。</p>
+<h3 id="B站视频观看地址-点我跳转"><a href="#B站视频观看地址-点我跳转" class="headerlink" title="B站视频观看地址:点我跳转"></a><strong><strong>B站视频观看地址:<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1VRskeYEVp/?spm_id_from=333.999.0.0&vd_source=2ceeb13cc1049b1b66d3c33db45951b1">点我跳转</a></strong></strong></h3><h3 id="一、功能特点"><a href="#一、功能特点" class="headerlink" title="一、功能特点"></a><strong><strong>一、功能特点</strong></strong></h3><p><strong><strong>（一）简洁直观的界面</strong></strong></p>
+<p>Python 记事本拥有简洁明了的用户界面，布局合理，操作便捷。无论是新手还是经验丰富的用户，都能在短时间内快速上手。无需复杂的菜单导航，你可以轻松找到所需的编辑功能，专注于文本创作和处理。<br><img src="https://s2.loli.net/2024/10/01/Uih3kjqDz9IRNxn.png"><br><img src="https://s2.loli.net/2024/10/01/hlJwmsX3EGMfVpq.png"></p>
+<p><strong><strong>（二）基本编辑功能一应俱全</strong></strong> </p>
+<p>1.<strong><strong>文字输入与编辑</strong></strong>：支持流畅的文字输入，你可以随心所欲地撰 写文章、记录笔记、编写代码等。同时，提供了丰富的编辑操作，如复制、粘贴、剪切、删除、撤销、重做等，满足你在文本处理过程中的各种需求。</p>
+<p>2.<strong><strong>段落格式调整：</strong></strong>轻松实现段落的对齐方式（左对齐、居中对齐、右对齐、两端对齐）、缩进（首行缩进、悬挂缩进）、行距设置等，让文档结构更加规范、层次分明。</p>
+<p><strong><strong>（三）文件操作便捷高效</strong></strong><br><img src="https://s2.loli.net/2024/10/01/lS73foMQZdYEC1A.png"><br>1.<strong><strong>新建文件</strong></strong>：快速创建新的空白文本文件，开始你的创作之旅。无论是撰写新的报告、计划，还是记录新的想法和灵感，都能一键启动。</p>
+<p>2.<strong><strong>打开文件</strong></strong>：支持多种文件格式的打开，如.txt、.csv、.log 等常见的文本文件格式。方便你查看和编辑已有的文档，无需在不同的软件之间切换。</p>
+<p>3.<strong><strong>保存文件</strong></strong>：实时保存你的编辑成果，确保数据安全。你可以选择将文件保存到本地指定位置，或者按照自己的需求设置保存格式和编码方式。</p>
+<p>4.<strong><strong>另存为</strong></strong>：如果你需要将当前文件保存为一个新的文件，或者更改文件的保存格式和路径，“另存为” 功能将为你提供便利。</p>
+<p><strong><strong>（四）查找与替换功能</strong></strong><br>1.<strong><strong>查找</strong></strong>：在大量的文本内容中，快速定位你需要查找的关键词或短语。Python 记事本提供了精确查找和模糊查找两种模式，你可以根据实际情况选择合适的方式。查找结果会清晰地显示在界面上，方便你查看和定位。<br><img src="https://s2.loli.net/2024/10/01/1XcW5rvsLmOgx7J.png"><br><img src="https://s2.loli.net/2024/10/01/Uih3kjqDz9IRNxn.png"></p>
+<p>2.<strong><strong>替换</strong></strong>：不仅可以查找文本，还能进行批量替换操作。当你需要修改文档中的多处相同内容时，替换功能将大大提高你的工作效率。你可以指定要替换的内容和替换后的新内容，一键完成替换操作。</p>
+<p><strong><strong>（五）自动保存与备份</strong></strong><br>为了防止因意外情况导致数据丢失，Python 记事本具备自动保存功能。它会在你编辑过程中定期自动保存文件，确保你的工作成果得到及时保护。此外，还支持手动备份文件，你可以将重要的文件备份到指定位置，以备不时之需。</p>
+<p><img src="https://s2.loli.net/2024/10/01/82qtAsMWzQHLcl9.png"></p>
+<p><strong><strong>（六）黑夜模式</strong></strong><br><img src="https://s2.loli.net/2024/10/01/2NmRYOMH8ob31uD.png"><br><strong><strong>1、视觉效果方面</strong></strong></p>
+<p><strong><strong>1.降低屏幕亮度</strong></strong><br>    在夜晚或低光环境下，减少屏幕发出的强光对眼睛的刺激。你可以更加舒适地查看和编辑代码，而不会感到过于刺眼。</p>
+<p><strong><strong>2.深色主题</strong></strong><br>    通常采用黑色或深色的背景颜色，搭配浅色的文本。这种颜色组合可以减少眼睛的疲劳感，尤其是在长时间使用时。例如，黑色背景可以降低屏幕的整体亮度，而浅色的代码文本则更加突出，易于阅读。</p>
+<p> <strong><strong>2、功能影响方面</strong></strong><br><strong><strong>1.提高专注度</strong></strong><br>    深色的界面可以减少视觉干扰，让你更专注于代码的编写。没有过多的亮色和繁杂的图案，你可以将注意力集中在代码逻辑和问题解决上。</p>
+<p><strong><strong>2.可能节省电量</strong></strong><br>    对于一些设备，深色主题可能会降低屏幕的功耗，从而在一定程度上节省电量。这对于使用笔记本电脑等移动设备进行 Python 开发的人来说是一个额外的好处。</p>
+<hr>
+<h3 id="二-源码展示"><a href="#二-源码展示" class="headerlink" title="二.源码展示"></a><strong><strong>二.源码展示</strong></strong></h3><h4 id="在使用源码之前，确保您已经安装Python及运行所需库"><a href="#在使用源码之前，确保您已经安装Python及运行所需库" class="headerlink" title="在使用源码之前，确保您已经安装Python及运行所需库"></a><strong><strong>在使用源码之前，确保您已经安装Python及运行所需库</strong></strong></h4><p>1.<strong><strong>Python下载链接</strong></strong>:<a target="_blank" rel="noopener" href="https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe">点我跳转</a><br>2.<strong><strong>确保您安装以下库</strong></strong></p>
+<p><strong><strong>tkinter</strong></strong></p>
+<p><strong><strong>ttkbootstrap</strong></strong></p>
+<p><strong><strong>如果没有</strong></strong></p>
+<p><strong><strong>请在cmd或PowerShell输入以下代码</strong></strong></p>
+<p><strong><strong>tkinter</strong></strong>:</p>
+<p><code>pip install tk</code></p>
+<p><strong><strong>ttkbootstrap</strong></strong>:</p>
+<p><code>pip install ttkbootstrap</code></p>
+<h4 id="以下是源码"><a href="#以下是源码" class="headerlink" title="以下是源码"></a><strong><strong>以下是源码</strong></strong></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br></pre></td><td class="code"><pre><span class="line">import tkinter as tk</span><br><span class="line">from tkinter import messagebox, filedialog, scrolledtext, simpledialog</span><br><span class="line">from ttkbootstrap import Style</span><br><span class="line">import tkinter.font as tkfont</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class SimpleTextEditor:</span><br><span class="line">    def __init__(self, root):</span><br><span class="line">        self.root = root</span><br><span class="line">        self.root.title(&quot;记事本&quot;)</span><br><span class="line">        self.root.geometry(&quot;800x600&quot;)</span><br><span class="line"></span><br><span class="line">        # 设置窗口图标（如果图标文件存在）</span><br><span class="line">        try:</span><br><span class="line">            self.root.iconbitmap(&#x27;bitbug_favicon.ico&#x27;)</span><br><span class="line">        except Exception as e:</span><br><span class="line">            print(f&quot;无法设置图标: &#123;e&#125;&quot;)</span><br><span class="line"></span><br><span class="line">        # 设置主题</span><br><span class="line">        self.style = Style(theme=&#x27;journal&#x27;)</span><br><span class="line"></span><br><span class="line">        # 创建主文本区域</span><br><span class="line">        self.current_font = (&#x27;Helvetica&#x27;, 12)</span><br><span class="line">        self.text_area = scrolledtext.ScrolledText(root, wrap=&#x27;word&#x27;, font=self.current_font)</span><br><span class="line">        self.text_area.pack(expand=True, fill=&#x27;both&#x27;)</span><br><span class="line">        self.show_welcome()</span><br><span class="line"></span><br><span class="line">        # 文件路径初始化</span><br><span class="line">        self.file_path = None</span><br><span class="line"></span><br><span class="line">        # 自动保存状态变量</span><br><span class="line">        self.auto_save_enabled = tk.BooleanVar(value=True)  # 默认启用自动保存</span><br><span class="line"></span><br><span class="line">        # 创建菜单栏</span><br><span class="line">        self.menu_bar = tk.Menu(root)</span><br><span class="line">        self.create_menus()</span><br><span class="line">        self.root.config(menu=self.menu_bar)</span><br><span class="line"></span><br><span class="line">        # 创建状态栏</span><br><span class="line">        self.create_status_bar()</span><br><span class="line"></span><br><span class="line">        # 绑定更新状态栏的方法到 ScrolledText</span><br><span class="line">        self.text_area.bind(&quot;&lt;KeyRelease&gt;&quot;, self.update_status_bar)</span><br><span class="line"></span><br><span class="line">        # 初始化主题</span><br><span class="line">        self.dark_mode = False</span><br><span class="line">        self.update_theme()</span><br><span class="line"></span><br><span class="line">        # 启动自动保存</span><br><span class="line">        self.auto_save_interval = 3000  # 每 3 秒自动保存一次</span><br><span class="line">        if self.auto_save_enabled.get():</span><br><span class="line">            self.start_auto_save()</span><br><span class="line"></span><br><span class="line">    def create_status_bar(self):</span><br><span class="line">        &quot;&quot;&quot;创建状态栏以显示行，列和单词数&quot;&quot;&quot;</span><br><span class="line">        self.status_bar = tk.Frame(self.root, bd=1, relief=tk.SUNKEN)</span><br><span class="line">        self.status_bar.pack(side=tk.BOTTOM, fill=tk.X)</span><br><span class="line"></span><br><span class="line">        self.col_label = tk.Label(self.status_bar, text=&quot;列: 0&quot;, anchor=tk.W)</span><br><span class="line">        self.col_label.pack(side=tk.LEFT)</span><br><span class="line"></span><br><span class="line">        self.row_label = tk.Label(self.status_bar, text=&quot;行: 0&quot;, anchor=tk.CENTER)</span><br><span class="line">        self.row_label.pack(side=tk.LEFT, expand=True, fill=tk.X)</span><br><span class="line"></span><br><span class="line">        self.word_label = tk.Label(self.status_bar, text=&quot;字数: 0&quot;, anchor=tk.E)</span><br><span class="line">        self.word_label.pack(side=tk.RIGHT)</span><br><span class="line"></span><br><span class="line">    def create_menus(self):</span><br><span class="line">        &quot;&quot;&quot;创建菜单项&quot;&quot;&quot;</span><br><span class="line">        self.create_file_menu()</span><br><span class="line">        self.create_edit_menu()</span><br><span class="line">        self.create_view_menu()</span><br><span class="line">        self.create_help_menu()</span><br><span class="line"></span><br><span class="line">    def show_welcome(self):</span><br><span class="line">        &quot;&quot;&quot;显示欢迎信息于文本区域&quot;&quot;&quot;</span><br><span class="line">        welcome_message = &quot;欢迎来到更好的文本编辑器！\n通过菜单打开或创建文本文件。\n请转到查看更多详情。&quot;</span><br><span class="line">        self.text_area.insert(tk.END, welcome_message)</span><br><span class="line"></span><br><span class="line">    def new_file(self):</span><br><span class="line">        &quot;&quot;&quot;创建新文件&quot;&quot;&quot;</span><br><span class="line">        if self.confirm_save_changes():</span><br><span class="line">            self.text_area.delete(1.0, tk.END)</span><br><span class="line">            self.show_welcome()</span><br><span class="line">            self.file_path = None</span><br><span class="line">            if self.auto_save_enabled.get():</span><br><span class="line">                self.start_auto_save()</span><br><span class="line"></span><br><span class="line">    def open_file(self):</span><br><span class="line">        &quot;&quot;&quot;打开现有的文件&quot;&quot;&quot;</span><br><span class="line">        if self.confirm_save_changes():</span><br><span class="line">            file_path = filedialog.askopenfilename()</span><br><span class="line">            if file_path:</span><br><span class="line">                try:</span><br><span class="line">                    with open(file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as file:</span><br><span class="line">                        content = file.read()</span><br><span class="line">                        self.text_area.delete(1.0, tk.END)</span><br><span class="line">                        self.text_area.insert(tk.END, content)</span><br><span class="line">                        self.file_path = file_path</span><br><span class="line">                    if self.auto_save_enabled.get():</span><br><span class="line">                        self.start_auto_save()</span><br><span class="line"></span><br><span class="line">                except Exception as e:</span><br><span class="line">                    messagebox.showerror(&quot;错误&quot;, f&quot;无法打开文件: &#123;e&#125;&quot;)</span><br><span class="line"></span><br><span class="line">    def save_file(self):</span><br><span class="line">        &quot;&quot;&quot;保存当前文件&quot;&quot;&quot;</span><br><span class="line">        if self.file_path:</span><br><span class="line">            try:</span><br><span class="line">                with open(self.file_path, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as file:</span><br><span class="line">                    content = self.text_area.get(1.0, tk.END)</span><br><span class="line">                    file.write(content)</span><br><span class="line">            except Exception as e:</span><br><span class="line">                messagebox.showerror(&quot;错误&quot;, f&quot;无法保存文件: &#123;e&#125;&quot;)</span><br><span class="line">        else:</span><br><span class="line">            self.save_as_file()</span><br><span class="line"></span><br><span class="line">    def save_as_file(self):</span><br><span class="line">        &quot;&quot;&quot;另存为&quot;&quot;&quot;</span><br><span class="line">        file_path = filedialog.asksaveasfilename(</span><br><span class="line">            defaultextension=&quot;.txt&quot;,</span><br><span class="line">            filetypes=[(&quot;文本文件&quot;, &quot;*.txt&quot;), (&quot;所有文件&quot;, &quot;*.*&quot;)]</span><br><span class="line">        )</span><br><span class="line">        if file_path:</span><br><span class="line">            try:</span><br><span class="line">                with open(file_path, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as file:</span><br><span class="line">                    content = self.text_area.get(1.0, tk.END)</span><br><span class="line">                    file.write(content)</span><br><span class="line">                    self.file_path = file_path</span><br><span class="line">            except Exception as e:</span><br><span class="line">                messagebox.showerror(&quot;错误&quot;, f&quot;无法另存为: &#123;e&#125;&quot;)</span><br><span class="line"></span><br><span class="line">    def confirm_save_changes(self):</span><br><span class="line">        &quot;&quot;&quot;确认是否保存更改&quot;&quot;&quot;</span><br><span class="line">        if self.text_area.edit_modified():</span><br><span class="line">            response = messagebox.askyesnocancel(&quot;提示&quot;, &quot;当前文件有未保存的更改，是否保存？&quot;)</span><br><span class="line">            if response is True:</span><br><span class="line">                self.save_file()</span><br><span class="line">            return response is not None</span><br><span class="line">        return True</span><br><span class="line"></span><br><span class="line">    def find(self):</span><br><span class="line">        &quot;&quot;&quot;查找文本中的关键字&quot;&quot;&quot;</span><br><span class="line">        search_query = simpledialog.askstring(&quot;查找&quot;, &quot;输入要查找的关键词：&quot;, parent=self.root)</span><br><span class="line">        if search_query:</span><br><span class="line">            start_index = &#x27;1.0&#x27;</span><br><span class="line">            end_index = self.text_area.index(tk.END)</span><br><span class="line">            self.text_area.tag_remove(&#x27;highlight&#x27;, &#x27;1.0&#x27;, tk.END)</span><br><span class="line">            count = 0</span><br><span class="line">            found_index = None</span><br><span class="line"></span><br><span class="line">            while True:</span><br><span class="line">                start_index = self.text_area.search(search_query, start_index, nocase=1, stopindex=end_index)</span><br><span class="line">                if not start_index:</span><br><span class="line">                    break</span><br><span class="line">                end_index = f&quot;&#123;start_index&#125;+&#123;len(search_query)&#125;c&quot;</span><br><span class="line">                self.text_area.tag_add(&#x27;highlight&#x27;, start_index, end_index)</span><br><span class="line">                self.text_area.tag_config(&#x27;highlight&#x27;, background=&#x27;yellow&#x27;)</span><br><span class="line"></span><br><span class="line">                if not found_index:</span><br><span class="line">                    found_index = start_index</span><br><span class="line">                start_index = self.text_area.index(end_index)</span><br><span class="line">                count += 1</span><br><span class="line"></span><br><span class="line">            if found_index and count &gt; 0:</span><br><span class="line">                self.text_area.see(found_index)</span><br><span class="line"></span><br><span class="line">            messagebox.showinfo(&quot;查找结果&quot;, f&quot;找到 &#123;count&#125; 个 &#x27;&#123;search_query&#125;&#x27;&quot; if count &gt; 0 else &quot;没有找到关键词&quot;)</span><br><span class="line"></span><br><span class="line">    def copy(self):</span><br><span class="line">        &quot;&quot;&quot;复制选中的文本&quot;&quot;&quot;</span><br><span class="line">        try:</span><br><span class="line">            selection = self.text_area.selection_get()</span><br><span class="line">            self.root.clipboard_clear()</span><br><span class="line">            self.root.clipboard_append(selection)</span><br><span class="line">        except tk.TclError:</span><br><span class="line">            messagebox.showerror(&quot;错误&quot;, &quot;没有选中任何内容来复制&quot;)</span><br><span class="line"></span><br><span class="line">    def cut(self):</span><br><span class="line">        &quot;&quot;&quot;剪切选中的文本&quot;&quot;&quot;</span><br><span class="line">        try:</span><br><span class="line">            selection = self.text_area.selection_get()</span><br><span class="line">            self.root.clipboard_clear()</span><br><span class="line">            self.root.clipboard_append(selection)</span><br><span class="line">            self.text_area.delete(tk.SEL_FIRST, tk.SEL_LAST)</span><br><span class="line">        except tk.TclError:</span><br><span class="line">            messagebox.showerror(&quot;错误&quot;, &quot;没有选中任何内容来剪切&quot;)</span><br><span class="line"></span><br><span class="line">    def paste(self):</span><br><span class="line">        &quot;&quot;&quot;粘贴剪贴板内容&quot;&quot;&quot;</span><br><span class="line">        try:</span><br><span class="line">            content = self.root.clipboard_get()</span><br><span class="line">            self.text_area.insert(tk.INSERT, content)</span><br><span class="line">        except tk.TclError:</span><br><span class="line">            messagebox.showerror(&quot;错误&quot;, &quot;剪贴板为空，无法粘贴&quot;)</span><br><span class="line"></span><br><span class="line">    def update_status_bar(self, event=None):</span><br><span class="line">        &quot;&quot;&quot;更新状态栏的行，列和字数信息&quot;&quot;&quot;</span><br><span class="line">        cursor_position = self.text_area.index(tk.INSERT)</span><br><span class="line">        row, col = map(int, cursor_position.split(&#x27;.&#x27;))</span><br><span class="line">        self.row_label.config(text=f&quot;行: &#123;row + 1&#125;&quot;)</span><br><span class="line">        self.col_label.config(text=f&quot;列: &#123;col + 1&#125;&quot;)</span><br><span class="line">        content = self.text_area.get(1.0, tk.END)</span><br><span class="line">        word_count = len(content.split())</span><br><span class="line">        self.word_label.config(text=f&quot;字数: &#123;word_count&#125;&quot;)</span><br><span class="line"></span><br><span class="line">    def create_file_menu(self):</span><br><span class="line">        &quot;&quot;&quot;创建文件菜单&quot;&quot;&quot;</span><br><span class="line">        file_menu = tk.Menu(self.menu_bar, tearoff=0)</span><br><span class="line">        file_menu.add_command(label=&quot;新建&quot;, command=self.new_file)</span><br><span class="line">        file_menu.add_command(label=&quot;打开&quot;, command=self.open_file)</span><br><span class="line">        file_menu.add_command(label=&quot;保存&quot;, command=self.save_file)</span><br><span class="line">        file_menu.add_command(label=&quot;另存为&quot;, command=self.save_as_file)</span><br><span class="line">        file_menu.add_separator()</span><br><span class="line">        file_menu.add_command(label=&quot;退出&quot;, command=self.root.quit)</span><br><span class="line">        self.menu_bar.add_cascade(label=&quot;文件&quot;, menu=file_menu)</span><br><span class="line"></span><br><span class="line">    def create_edit_menu(self):</span><br><span class="line">        &quot;&quot;&quot;创建编辑菜单&quot;&quot;&quot;</span><br><span class="line">        edit_menu = tk.Menu(self.menu_bar, tearoff=0)</span><br><span class="line">        edit_menu.add_command(label=&quot;复制&quot;, command=self.copy)</span><br><span class="line">        edit_menu.add_command(label=&quot;粘贴&quot;, command=self.paste)</span><br><span class="line">        edit_menu.add_command(label=&quot;剪切&quot;, command=self.cut)</span><br><span class="line">        edit_menu.add_separator()</span><br><span class="line">        edit_menu.add_command(label=&quot;查找&quot;, command=self.find)</span><br><span class="line">        self.menu_bar.add_cascade(label=&quot;编辑&quot;, menu=edit_menu)</span><br><span class="line"></span><br><span class="line">    def create_view_menu(self):</span><br><span class="line">        &quot;&quot;&quot;创建视图菜单&quot;&quot;&quot;</span><br><span class="line">        view_menu = tk.Menu(self.menu_bar, tearoff=0)</span><br><span class="line">        view_menu.add_command(label=&quot;切换到黑暗模式&quot;, command=lambda: self.toggle_theme(force_light=False))</span><br><span class="line">        view_menu.add_command(label=&quot;切换到白色模式&quot;, command=lambda: self.toggle_theme(force_light=True))</span><br><span class="line">        view_menu.add_separator()</span><br><span class="line">        view_menu.add_checkbutton(label=&quot;启用自动保存&quot;, onvalue=True, offvalue=False, variable=self.auto_save_enabled,</span><br><span class="line">                                  command=self.toggle_auto_save)</span><br><span class="line">        self.menu_bar.add_cascade(label=&quot;视图&quot;, menu=view_menu)</span><br><span class="line"></span><br><span class="line">    def toggle_theme(self, force_light=False):</span><br><span class="line">        &quot;&quot;&quot;切换主题&quot;&quot;&quot;</span><br><span class="line">        self.dark_mode = not force_light and not self.dark_mode</span><br><span class="line">        self.update_theme()</span><br><span class="line"></span><br><span class="line">    def update_theme(self):</span><br><span class="line">        &quot;&quot;&quot;更新主题&quot;&quot;&quot;</span><br><span class="line">        if self.dark_mode:</span><br><span class="line">            self.style.theme_use(&#x27;darkly&#x27;)</span><br><span class="line">        else:</span><br><span class="line">            self.style.theme_use(&#x27;journal&#x27;)</span><br><span class="line"></span><br><span class="line">    def create_help_menu(self):</span><br><span class="line">        &quot;&quot;&quot;创建帮助菜单&quot;&quot;&quot;</span><br><span class="line">        help_menu = tk.Menu(self.menu_bar, tearoff=0)</span><br><span class="line">        help_menu.add_command(label=&quot;查看帮助&quot;, command=self.view_help)</span><br><span class="line">        help_menu.add_separator()</span><br><span class="line">        help_menu.add_command(label=&quot;关于&quot;, command=self.show_about)</span><br><span class="line">        self.menu_bar.add_cascade(label=&quot;帮助&quot;, menu=help_menu)</span><br><span class="line"></span><br><span class="line">    def show_about(self):</span><br><span class="line">        &quot;&quot;&quot;显示关于信息&quot;&quot;&quot;</span><br><span class="line">        about_window = tk.Toplevel(self.root)</span><br><span class="line">        about_window.title(&quot;关于&quot;)</span><br><span class="line">        about_label = tk.Label(about_window, text=&quot;简易文本编辑器\n版本: 1.0\n作者: ERTJ\n感谢您的使用！\nvolta-os.github.io&quot;)</span><br><span class="line">        about_label.pack(padx=30, pady=30)</span><br><span class="line">        try:</span><br><span class="line">            about_window.iconbitmap(&#x27;bitbug_favicon.ico&#x27;)</span><br><span class="line">        except Exception as e:</span><br><span class="line">            print(f&quot;无法设置图标: &#123;e&#125;&quot;)</span><br><span class="line"></span><br><span class="line">    def view_help(self):</span><br><span class="line">        &quot;&quot;&quot;显示帮助信息&quot;&quot;&quot;</span><br><span class="line">        help_window = tk.Toplevel(self.root)</span><br><span class="line">        help_window.title(&quot;帮助&quot;)</span><br><span class="line">        help_text = &quot;&quot;&quot;</span><br><span class="line">        简易文本编辑器使用说明：</span><br><span class="line">        - 文件菜单：</span><br><span class="line">            - 新建：清除当前文本内容并显示欢迎信息。</span><br><span class="line">            - 打开：从文件系统中选择一个文本文件并加载到编辑器中。</span><br><span class="line">            - 保存：将编辑器中的内容保存到文件中。</span><br><span class="line">            - 另存为：将编辑器中的内容保存到新文件中。</span><br><span class="line">            - 退出：关闭应用程序。</span><br><span class="line">        - 编辑菜单：</span><br><span class="line">            - 复制：将选中的文本复制到剪贴板。</span><br><span class="line">            - 粘贴：将剪贴板中的内容粘贴到编辑器中。</span><br><span class="line">            - 剪切：将选中的文本剪切到剪贴板，并从编辑器中删除。</span><br><span class="line">            - 查找：在文本中查找特定关键词。</span><br><span class="line">        - 视图菜单：</span><br><span class="line">            - 切换到黑暗模式/白色模式：更改应用程序的主题。</span><br><span class="line">            - 启用自动保存：开启或关闭自动保存功能。</span><br><span class="line">        更多请访问 volta-os.github.io</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        help_label = tk.Label(help_window, text=help_text, justify=tk.LEFT)</span><br><span class="line">        help_label.pack(padx=10, pady=10)</span><br><span class="line"></span><br><span class="line">    def auto_save(self):</span><br><span class="line">        &quot;&quot;&quot;自动保存功能&quot;&quot;&quot;</span><br><span class="line">        if self.file_path and self.auto_save_enabled.get():</span><br><span class="line">            self.save_file()</span><br><span class="line">            self.start_auto_save()  # 重新启动定时器</span><br><span class="line"></span><br><span class="line">    def start_auto_save(self):</span><br><span class="line">        &quot;&quot;&quot;启动自动保存&quot;&quot;&quot;</span><br><span class="line">        self.root.after(self.auto_save_interval, self.auto_save)</span><br><span class="line"></span><br><span class="line">    def stop_auto_save(self):</span><br><span class="line">        &quot;&quot;&quot;停止自动保存&quot;&quot;&quot;</span><br><span class="line">        self.root.after_cancel(self.auto_save)</span><br><span class="line"></span><br><span class="line">    def toggle_auto_save(self):</span><br><span class="line">        &quot;&quot;&quot;切换自动保存功能&quot;&quot;&quot;</span><br><span class="line">        if self.auto_save_enabled.get():</span><br><span class="line">            self.start_auto_save()</span><br><span class="line">        else:</span><br><span class="line">            self.stop_auto_save()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    root = tk.Tk()</span><br><span class="line">    editor = SimpleTextEditor(root)</span><br><span class="line">    root.mainloop()</span><br></pre></td></tr></table></figure>
+<h3 id="打包软件下载"><a href="#打包软件下载" class="headerlink" title="打包软件下载"></a><strong><strong>打包软件下载</strong></strong></h3><h4 id="软件下载地址-点我跳转"><a href="#软件下载地址-点我跳转" class="headerlink" title="软件下载地址 :点我跳转"></a><strong><strong>软件下载地址</strong></strong> :<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Spg0AH5AIShLKk6cTqb8Hg?pwd=ERTJ">点我跳转</a></h4> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2024/10/01/%E5%9F%BA%E4%BA%8EPython%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC%E5%BA%94%E7%94%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/09/08/VoltaOS%202024.9.8%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">VotlaOS 2024.9.8更新日志</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2024
+        <i class="ri-heart-fill heart_icon"></i> VoltaOS创作团队
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="VoltaOS"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我们</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
